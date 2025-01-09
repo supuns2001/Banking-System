@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "quick";
+    src: url("./font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "honey";
+    src: url("./font/HoneyScript-Light.ttf");
+}
+
+@font-face {
+    font-family: "baloo";
+    src: url("./font/BalooTammudu2-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "indie";
+    src: url("./font/Courgette-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("./font/Orbitron-VariableFont_wght.ttf");
+}
+
+
+.font1{
+    font-family: "Orbitron";
+}
+
+.main {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999999999;
+}
+
+.mainDiv1 {
+    width: 100%;
+    background-color: #E8B4B8;
+    /* box-shadow: 0px 0px 2px 1px rgb(231, 230, 230); */
+}
+
+.divrow1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hederDiv1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 25%;
+}
+
+.hederDiv12 {
+    width: 80%;
+    height: 5vh;
+    /* background-color: brown; */
+    /* background-image: url("img/logo.png"); */
+    background-size: contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    padding-left: 5px;
+}
+
+.hederDiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    width: 50%;
+}
+
+.hederDiv3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 25%;
+}
+
+.hederDiv4 {
+    display: none;
+}
+
+.hederSpan1 {
+    /* font-family: "baloo"; */
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.hederAncer1 {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.hederAncer2 {
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgba(231, 123, 0, 0.892);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.hederAncer1:hover {
+    transition-duration: 0.3s;
+    color: rgba(231, 123, 0, 0.892);
+}
+
+.icon1 {
+    width: 20px;
+    height: 20px;
+    margin-left: 66%;
+}
+
+.icon2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 16%;
+}
+
+.hedreinput2 {
+    width: 10%;
+    outline: none;
+    padding: 4px;
+    padding-right: 11%;
+    border: none;
+    /* background-color: rgba(198, 194, 194, 0.801); */
+    transition-duration: 2s;
+}
+
+.hedreinput2 {
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes moving {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.icon2 {
+    animation-name: moving2;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes moving2 {
+    0% {
+        margin-left: 0%;
+    }
+    100% {
+        margin-left: 16%;
+    }
+}
+
+.hederIcon3 {
+    margin-left: 89%;
+    margin-top: 4%;
+    /* position: absolute; */
+    display: none;
+    padding-right: 10px;
+    /* background-color: red; */
+}
+.hederIcon3::after{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+    .divrow1 {
+        padding: 0;
+    }
+    .hederDiv1 {
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .hederDiv2 {
+        display: none;
+        margin-left: -100%;
+    }
+    .hederDiv22 {
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .hederDiv222 {
+        width: 80%;
+        position: absolute;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-left: -100%;
+    }
+    .hederAncer1 {
+        width: 100%;
+        /* color: red; */
+        padding: 15px;
+    }
+    .hederAncer2 {
+        width: 100%;
+        /* color: red; */
+        padding: 15px;
+    }
+    .hederDiv3 {
+        display: none;
+    }
+    .hederDiv4 {
+        width: 30%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 12px;
+    }
+    .hederIcon2 {
+        width: 25px;
+    }
+    .hederIcon3 {
+        display: block;
+        width: 25px;
+        opacity: 0.8;
+    }
+    .hederDiv22 {
+        animation-name: navi;
+        animation-duration: 0.8s;
+        animation-delay: 0s;
+    }
+    @keyframes navi {
+        0% {
+            margin-left: -100%;
+        }
+        100% {
+            margin-left: 0%;
+        }
+    }
+    .hederDiv222 {
+        animation-name: navi2;
+        animation-duration: 0.8s;
+        animation-delay: 0s;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes navi2 {
+        0% {
+            margin-left: 0%;
+        }
+        100% {
+            margin-left: -100%;
+        }
+    }
+}
